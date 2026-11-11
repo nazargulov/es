@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Detector de IA e humanizador de texto em português | TextoVivo</title>
-<meta name="description" content="Detector de IA frase por frase e humanizador de texto. Cole o texto e veja quais frases parecem IA e por quê. 5 testes grátis, sem cadastro.">
+<meta name="description" content="Detector de IA frase por frase e humanizador de texto. Cole o texto e veja quais frases parecem IA e por quê. Lançamento: 50 usos grátis, sem cadastro.">
 <link rel="icon" href="icon128.png">
 <link rel="alternate" hreflang="es" href="https://nazargulov.github.io/es/detector-ia/">
 <link rel="alternate" hreflang="pt-BR" href="https://nazargulov.github.io/es/detector-ia/pt.html">
@@ -51,7 +51,7 @@ footer{padding:30px 0 50px;color:var(--muted);font-size:14px}footer a{color:var(
     <p class="muted">Atenção: a porcentagem é uma estimativa e às vezes erra. Não use como única prova contra um aluno.</p>
   </div>
 </div>
-<p class="muted" style="margin-top:10px">5 testes grátis. Com <a href="#instalar">a extensão</a> ele fica no painel lateral do Chrome e dá para verificar com o botão direito.</p>
+<p class="muted" style="margin-top:10px">Lançamento: 50 usos grátis se começar até 31 de dezembro. Com <a href="#instalar">a extensão</a> ele fica no painel lateral do Chrome e dá para verificar com o botão direito.</p>
 
 <section>
 <h2>O que ele faz</h2>
@@ -73,7 +73,7 @@ footer{padding:30px 0 50px;color:var(--muted);font-size:14px}footer a{color:var(
 <details><summary>O detector sempre acerta?</summary><p>Não, nenhum acerta sempre. No meu último teste com 117 textos em espanhol e português, ele marcou como IA 4 de cada 100 textos escritos por pessoas. E quando alguém pede pra IA escrever «como um estudante», quase metade passa. Por isso aparece uma porcentagem, e não um sim ou não.</p></details>
 <details><summary>O texto humanizado passa em outros detectores?</summary><p>Nem sempre. O detector olha principalmente se tem ideias concretas, então mudar só o estilo quase não muda nada. No meu teste com 12 textos de IA, respondendo às perguntas da extensão, 8 ficaram abaixo de 40% no nosso detector. Outros detectores podem dar outro resultado.</p></details>
 <details><summary>Vocês guardam meu texto?</summary><p>O que você cola aqui é analisado e apagado. Fica só um hash do texto e o resultado por 7 dias, para que o mesmo texto dê o mesmo resultado. Na extensão você pode deixar a gente guardar para melhorar o detector, ou desligar. Detalhes em <a href="privacidad.html#pt">privacidade</a>.</p></details>
-<details><summary>Quanto custa?</summary><p>5 testes grátis, de até 3.000 caracteres. Depois, na extensão: Premium (300 por dia, textos de até 15.000) ou sua própria chave do Gemini: sem limite do TextoVivo, só os da sua conta do Google.</p></details>
+<details><summary>Quanto custa?</summary><p>No lançamento, 50 usos grátis se começar até 31 de dezembro, com textos de até 3.000 caracteres. Depois, na extensão: Premium (300 por dia, textos de até 15.000) ou sua própria chave do Gemini: sem limite do TextoVivo, só os da sua conta do Google.</p></details>
 </section>
 
 <footer>TextoVivo. <a href="privacidad.html#pt">Privacidade</a> · <a href="mailto:u9603656505@gmail.com" id="mail">Contato</a></footer>
@@ -82,7 +82,7 @@ footer{padding:30px 0 50px;color:var(--muted);font-size:14px}footer a{color:var(
 const API='https://textovivo-api.u9603656505.workers.dev';
 const $=(i)=>document.getElementById(i);
 let id=null;try{id=localStorage.getItem('tv_id');if(!id){id=crypto.randomUUID();localStorage.setItem('tv_id',id)}}catch(e){id=crypto.randomUUID()}
-const MSG={too_short:'Texto curto demais: precisa de pelo menos 40 palavras.',too_long:'Texto longo demais: o máximo é 3.000 caracteres.',ip:'Hoje já fizeram muitos testes grátis desta rede. Volte amanhã ou use a extensão.',quota:'Você já usou os 5 testes grátis. Na extensão dá para continuar com o Premium ou com sua própria chave do Gemini.',busy:'Muita procura agora. Tente de novo em alguns minutos.'};
+const MSG={too_short:'Texto curto demais: precisa de pelo menos 40 palavras.',too_long:'Texto longo demais: o máximo é 3.000 caracteres.',ip:'Hoje já fizeram muitos testes grátis desta rede. Volte amanhã ou use a extensão.',quota:'Você já usou seus usos grátis. Na extensão dá para continuar com o Premium ou com sua própria chave do Gemini.',busy:'Muita procura agora. Tente de novo em alguns minutos.'};
 const R={generic:'Afirmações genéricas',balanced_structure:'Estrutura uniforme demais',stock_connectors:'Conectivos muito usados',summary_ending:'Fecho que resume',polished_tone:'Tom polido demais',uniform_sentences:'Frases de tamanho parecido',concrete_detail:'Detalhes concretos',concrete_facts:'Nomes e números',uneven_rhythm:'Ritmo irregular',varied_sentences:'Frases de tamanho variado',personal_voice:'Voz própria',errors_or_regional:'Erros de digitação ou regionalismos'};
 const V={ai:'Parece IA',mixed:'Misto: tem partes que parecem IA',human:'Parece humano'};
 async function call(path){
