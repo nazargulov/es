@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Detector de IA e humanizador de texto em português | TextoVivo</title>
+<meta name="description" content="Detector de IA frase por frase e humanizador de texto. Cole o texto e veja quais frases parecem IA e por quê. 5 testes grátis, sem cadastro.">
+<link rel="icon" href="icon128.png">
+<link rel="alternate" hreflang="es" href="https://nazargulov.github.io/es/detector-ia/">
+<link rel="alternate" hreflang="pt-BR" href="https://nazargulov.github.io/es/detector-ia/pt.html">
+<style>
+:root{--brand:#ffc933;--ink:#1b1a1f;--muted:#6b6772;--line:#e7e3da;--bg:#fffaeb;--ai:#e5383b;--ai-bg:#fde2e2;--mid-bg:#fff3c4;--human:#12805c}
+*{box-sizing:border-box}body{margin:0;font:17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+header{display:flex;align-items:center;gap:10px;padding:18px 0}header img{width:32px;height:32px}header b{font-size:18px}header nav{margin-left:auto;font-size:15px}header a{color:var(--muted);margin-left:16px}
+h1{font-size:clamp(34px,6vw,58px);line-height:1.05;letter-spacing:-.03em;margin:36px 0 12px}h1 em{font-style:normal;background:linear-gradient(transparent 62%,var(--brand) 62%);box-shadow:inset 0 -4px 0 var(--ai)}
+.lead{font-size:20px;color:var(--muted);max-width:620px;margin:0 0 26px}
+.tool{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 10px 30px rgba(16,24,40,.06)}
+textarea{width:100%;min-height:180px;padding:12px;border:1px solid var(--line);border-radius:10px;font:inherit;resize:vertical}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:12px}
+button,.btn{padding:11px 18px;border:0;border-radius:10px;font:inherit;font-weight:600;cursor:pointer;text-decoration:none;display:inline-block}
+.primary{background:var(--brand);color:var(--ink)}.dark{background:var(--ink);color:#fff}button:disabled{opacity:.55}
+.muted{color:var(--muted);font-size:14px}
+#result{margin-top:16px;display:none}.score{font-size:46px;font-weight:800;letter-spacing:-.03em}
+.marked{margin-top:10px;padding:12px;border:1px solid var(--line);border-radius:10px;white-space:pre-wrap}
+.hi{background:var(--ai-bg);box-shadow:inset 0 -2px 0 var(--ai)}.mid{background:var(--mid-bg)}
+section{margin:56px 0}h2{font-size:28px;letter-spacing:-.02em;margin:0 0 14px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px}.card h3{margin:0 0 6px;font-size:18px}.card p{margin:0;color:var(--muted);font-size:15px}
+details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:8px}summary{font-weight:600;cursor:pointer}
+footer{padding:30px 0 50px;color:var(--muted);font-size:14px}footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><img src="icon128.png" alt=""><b>TextoVivo</b><nav><a href="./" hreflang="es">Español</a><a href="privacidad.html#pt">Privacidade</a></nav></header>
+
+<h1>Detector de IA <em>frase por frase</em>.</h1>
+<p class="lead">Cola sua redação e veja quais frases ficam vermelhas. Embaixo aparece o motivo. Com «Humanizar» ele reescreve, e na extensão com os seus próprios exemplos.</p>
+
+<div class="tool">
+  <textarea id="t" placeholder="Cole aqui o seu texto (mínimo de 40 palavras)"></textarea>
+  <div class="row">
+    <button class="primary" id="go">Detectar IA</button>
+    <button class="dark" id="hz">Humanizar</button>
+    <span class="muted" id="st"></span>
+  </div>
+  <div id="result">
+    <div class="row"><span class="score" id="sc"></span><b id="vd"></b></div>
+    <p class="muted" id="rs"></p>
+    <div class="marked" id="mk"></div>
+    <p class="muted">Atenção: a porcentagem é uma estimativa e às vezes erra. Não use como única prova contra um aluno.</p>
+  </div>
+</div>
+<p class="muted" style="margin-top:10px">5 testes grátis. Com <a href="#instalar">a extensão</a> ele fica no painel lateral do Chrome e dá para verificar com o botão direito.</p>
+
+<section>
+<h2>O que ele faz</h2>
+<div class="cards">
+<div class="card"><h3>Frase por frase</h3><p>Vermelho se parece IA, amarelo se está na dúvida. Assim você sabe qual frase mudar.</p></div>
+<div class="card"><h3>Com o porquê</h3><p>O que mais aparece: «Além disso» e «Em suma» em todo parágrafo, ou frases quase do mesmo tamanho.</p></div>
+<div class="card"><h3>Humanizar</h3><p>Na extensão ele faz 3 perguntas e coloca suas respostas no texto. Você escolhe o tom: natural, acadêmico ou informal.</p></div>
+</div>
+</section>
+
+<section id="instalar">
+<h2>Extensão para o Chrome</h2>
+<p>Fica no painel lateral. Seleciona o texto em qualquer site, botão direito e pronto. Ela não lê as páginas que você visita.</p>
+<a class="btn primary" href="#" id="cws">Usar no Chrome</a>
+</section>
+
+<section>
+<h2>Perguntas frequentes</h2>
+<details><summary>O detector sempre acerta?</summary><p>Não, nenhum acerta sempre. No meu último teste com 117 textos em espanhol e português, ele marcou como IA 4 de cada 100 textos escritos por pessoas. E quando alguém pede pra IA escrever «como um estudante», quase metade passa. Por isso aparece uma porcentagem, e não um sim ou não.</p></details>
+<details><summary>O texto humanizado passa em outros detectores?</summary><p>Nem sempre. O detector olha principalmente se tem ideias concretas, então mudar só o estilo quase não muda nada. No meu teste com 12 textos de IA, respondendo às perguntas da extensão, 8 ficaram abaixo de 40% no nosso detector. Outros detectores podem dar outro resultado.</p></details>
+<details><summary>Vocês guardam meu texto?</summary><p>O que você cola aqui é analisado e apagado. Fica só um hash do texto e o resultado por 7 dias, para que o mesmo texto dê o mesmo resultado. Na extensão você pode deixar a gente guardar para melhorar o detector, ou desligar. Detalhes em <a href="privacidad.html#pt">privacidade</a>.</p></details>
+<details><summary>Quanto custa?</summary><p>5 testes grátis, de até 3.000 caracteres. Depois, na extensão: Premium (300 por dia, textos de até 15.000) ou sua própria chave do Gemini: sem limite do TextoVivo, só os da sua conta do Google.</p></details>
+</section>
+
+<footer>TextoVivo. <a href="privacidad.html#pt">Privacidade</a> · <a href="mailto:u9603656505@gmail.com" id="mail">Contato</a></footer>
+</div>
+<script>
+const API='https://textovivo-api.u9603656505.workers.dev';
+const $=(i)=>document.getElementById(i);
+let id=null;try{id=localStorage.getItem('tv_id');if(!id){id=crypto.randomUUID();localStorage.setItem('tv_id',id)}}catch(e){id=crypto.randomUUID()}
+const MSG={too_short:'Texto curto demais: precisa de pelo menos 40 palavras.',too_long:'Texto longo demais: o máximo é 3.000 caracteres.',ip:'Hoje já fizeram muitos testes grátis desta rede. Volte amanhã ou use a extensão.',quota:'Você já usou os 5 testes grátis. Na extensão dá para continuar com o Premium ou com sua própria chave do Gemini.',busy:'Muita procura agora. Tente de novo em alguns minutos.'};
+const R={generic:'Afirmações genéricas',balanced_structure:'Estrutura uniforme demais',stock_connectors:'Conectivos muito usados',summary_ending:'Fecho que resume',polished_tone:'Tom polido demais',uniform_sentences:'Frases de tamanho parecido',concrete_detail:'Detalhes concretos',concrete_facts:'Nomes e números',uneven_rhythm:'Ritmo irregular',varied_sentences:'Frases de tamanho variado',personal_voice:'Voz própria',errors_or_regional:'Erros de digitação ou regionalismos'};
+const V={ai:'Parece IA',mixed:'Misto: tem partes que parecem IA',human:'Parece humano'};
+async function call(path){
+  const text=$('t').value.trim(); if(!text){$('st').textContent='Primeiro cole um texto.';return null}
+  $('go').disabled=$('hz').disabled=true; $('st').textContent=path==='/ai/detect'?'Verificando o texto...':'Reescrevendo...';
+  try{const r=await fetch(API+path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text,clientId:id,share:false})});const d=await r.json();
+    $('st').textContent=r.ok?'':(MSG[d.reason==='ip'?'ip':d.code]||'Não deu para concluir. Tente de novo.');return r.ok?d:null}
+  catch(e){$('st').textContent='Sem conexão. Tente de novo.';return null}
+  finally{$('go').disabled=$('hz').disabled=false}
+}
+$('go').onclick=async()=>{const d=await call('/ai/detect');if(!d)return;$('result').style.display='block';$('sc').textContent=d.score+'%';$('sc').style.color=d.verdict==='ai'?'#e5383b':d.verdict==='human'?'#12805c':'#b86e00';$('vd').textContent=V[d.verdict];$('rs').textContent=[...new Set((d.reasons||[]).map((c)=>R[c]).filter(Boolean))].slice(0,4).join(' · ');
+  const m=$('mk');m.replaceChildren();for(const s of d.sentences){const e=document.createElement('span');if(s.score>=70)e.className='hi';else if(s.score>=45)e.className='mid';e.textContent=s.text;m.append(e,' ')}};
+$('hz').onclick=async()=>{const d=await call('/ai/humanize');if(!d)return;$('t').value=d.text;$('result').style.display='none';$('st').textContent='Pronto. Aqui só muda o estilo; na extensão dá para colocar os seus próprios detalhes.'};
+$('t').oninput=()=>{$('result').style.display='none';$('st').textContent=''}; // old result no longer describes the text
+</script>
+</body>
+</html>

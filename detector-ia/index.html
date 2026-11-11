@@ -6,6 +6,8 @@
 <title>Detector de IA y humanizador de texto en español | TextoVivo</title>
 <meta name="description" content="Detector de IA frase por frase y humanizador de texto. Pega tu texto y mira qué frases suenan a IA y por qué. 5 revisiones gratis, sin cuenta.">
 <link rel="icon" href="icon128.png">
+<link rel="alternate" hreflang="es" href="https://nazargulov.github.io/es/detector-ia/">
+<link rel="alternate" hreflang="pt-BR" href="https://nazargulov.github.io/es/detector-ia/pt.html">
 <style>
 :root{--brand:#ffc933;--ink:#1b1a1f;--muted:#6b6772;--line:#e7e3da;--bg:#fffaeb;--ai:#e5383b;--ai-bg:#fde2e2;--mid-bg:#fff3c4;--human:#12805c}
 *{box-sizing:border-box}body{margin:0;font:17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg)}
@@ -30,10 +32,10 @@ footer{padding:30px 0 50px;color:var(--muted);font-size:14px}footer a{color:var(
 </head>
 <body>
 <div class="wrap">
-<header><img src="icon128.png" alt=""><b>TextoVivo</b><nav><a href="privacidad.html#pt">Privacidade (PT)</a><a href="privacidad.html">Privacidad</a></nav></header>
+<header><img src="icon128.png" alt=""><b>TextoVivo</b><nav><a href="pt.html" hreflang="pt-BR">Português</a><a href="privacidad.html">Privacidad</a></nav></header>
 
 <h1>Detector de IA <em>frase por frase</em>.</h1>
-<p class="lead">Pega tu redacción y mira qué frases salen en rojo. Debajo sale el motivo, y con «Humanizar» la reescribe con los mismos datos.</p>
+<p class="lead">Pega tu redacción y mira qué frases salen en rojo. Debajo sale el motivo. Con «Humanizar» la reescribe, y en la extensión con tus propios ejemplos.</p>
 
 <div class="tool">
   <textarea id="t" placeholder="Pega aquí tu texto (mínimo 40 palabras)"></textarea>
@@ -56,7 +58,7 @@ footer{padding:30px 0 50px;color:var(--muted);font-size:14px}footer a{color:var(
 <div class="cards">
 <div class="card"><h3>Frase por frase</h3><p>Rojo si suena a IA, amarillo si hay dudas. Así sabes qué frase cambiar.</p></div>
 <div class="card"><h3>Con el porqué</h3><p>Lo que más sale: «Además» y «En conclusión» en cada párrafo, o frases que miden casi lo mismo.</p></div>
-<div class="card"><h3>Humanizar</h3><p>En la extensión te hace 2 o 3 preguntas y mete tus respuestas en el texto. Eliges tono: natural, académico o coloquial.</p></div>
+<div class="card"><h3>Humanizar</h3><p>En la extensión te hace 3 preguntas y mete tus respuestas en el texto. Eliges tono: natural, académico o coloquial.</p></div>
 </div>
 </section>
 
@@ -69,9 +71,9 @@ footer{padding:30px 0 50px;color:var(--muted);font-size:14px}footer a{color:var(
 <section>
 <h2>Preguntas frecuentes</h2>
 <details><summary>¿El detector acierta siempre?</summary><p>No, ninguno. En mi última prueba con 117 textos en español y portugués marcó como IA a 4 de cada 100 textos escritos por personas. Y si alguien le pide a la IA que escriba «como un estudiante», casi la mitad se le escapa. Por eso sale un porcentaje y no un sí o no.</p></details>
-<details><summary>¿El texto humanizado pasa otros detectores?</summary><p>No siempre. En mis pruebas los textos de IA reescritos bajaban algo, pero muchos seguían en rojo, porque el detector mira sobre todo si hay ideas concretas. Si metes un ejemplo tuyo, una fecha o algo que te pasó, baja bastante más.</p></details>
+<details><summary>¿El texto humanizado pasa otros detectores?</summary><p>No siempre. El detector mira sobre todo si hay ideas concretas, así que cambiar solo el estilo casi no baja nada. En mi prueba con 12 textos de IA, contestando a las preguntas de la extensión 8 bajaron de 40% en nuestro detector. Otros detectores pueden dar otra cosa.</p></details>
 <details><summary>¿Guardan mi texto?</summary><p>Lo que pegas aquí se analiza y se borra. Quedan solo un hash del texto y el resultado durante 7 días, para que si pegas el mismo texto te salga lo mismo. En la extensión puedes dejar que lo guardemos para mejorar el detector, o apagarlo. Detalles en <a href="privacidad.html">privacidad</a>.</p></details>
-<details><summary>¿Cuánto cuesta?</summary><p>5 revisiones gratis, de hasta 3.000 caracteres. Después, en la extensión: Premium (300 al día, textos de hasta 15.000) o gratis sin límite con tu propia clave de Gemini.</p></details>
+<details><summary>¿Cuánto cuesta?</summary><p>5 revisiones gratis, de hasta 3.000 caracteres. Después, en la extensión: Premium (300 al día, textos de hasta 15.000) o con tu propia clave de Gemini: sin límite de TextoVivo, solo los de tu cuenta de Google.</p></details>
 </section>
 
 <footer>TextoVivo. <a href="privacidad.html">Privacidad</a> · <a href="mailto:u9603656505@gmail.com" id="mail">Contacto</a></footer>
