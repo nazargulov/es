@@ -1,23 +1,80 @@
 <!doctype html>
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Privacidad | TextoVivo</title>
-<style>body{font:17px/1.6 system-ui,sans-serif;max-width:720px;margin:40px auto;padding:0 20px;color:#14171f}h1{letter-spacing:-.02em}h2{margin-top:32px;font-size:20px}</style></head>
+<style>body{font:17px/1.6 system-ui,sans-serif;max-width:720px;margin:40px auto;padding:0 20px;color:#14171f}h1{letter-spacing:-.02em}h2{margin-top:32px;font-size:20px}nav a{margin-right:12px}</style></head>
 <body>
-<h1>Política de privacidad de TextoVivo</h1>
-<p>Última actualización: 10 de noviembre de 2026.</p>
-<h2>Qué datos tratamos</h2>
+<nav><a href="#es">Español</a><a href="#pt">Português</a><a href="#en">English</a></nav>
+
+<h1 id="es">Política de privacidad de TextoVivo</h1>
+<p>Última actualización: 13 de noviembre de 2026. Se aplica a la extensión de Chrome «TextoVivo» (detector de IA y humanizador de texto) y a su servidor. Responsable: el desarrollador de TextoVivo, contacto <a href="mailto:u9603656505@gmail.com">u9603656505@gmail.com</a>.</p>
+
+<h2>1. Qué datos recogemos</h2>
 <ul>
-<li><b>El texto que envías.</b> Se manda a nuestro servidor para analizarlo o reescribirlo. Para hacerlo usamos un proveedor de modelos de IA (a través de OpenRouter, o Google Gemini si usas tu propia clave), que lo procesa solo para devolver la respuesta.</li>
-<li><b>Textos para mejorar el detector.</b> Si dejas activada la opción «Ayudar a mejorar el detector con mis textos» (viene activada; te la mostramos antes de tu primera revisión y puedes apagarla ahí o luego en Ajustes), guardamos el texto revisado, el resultado y, si la das, tu respuesta a «¿Quién escribió este texto?», hasta 180 días, en servidores de la UE. Los vinculamos a una huella del identificador de instalación, no a tu nombre ni a tu correo. Solo los usamos para medir y ajustar la detección. Con la opción apagada, el texto se descarta al terminar.</li>
-<li><b>Una huella anónima del texto</b> (hash) y su resultado, durante 7 días, para devolver el mismo resultado si revisas el mismo texto otra vez. Con la huella no se puede reconstruir el texto.</li>
-<li><b>Un identificador aleatorio de instalación</b> y un contador de pruebas gratis, para aplicar el límite. La dirección IP se usa con el mismo fin y se borra a los 2 días.</li>
-<li><b>Datos de uso anónimos</b> (Google Analytics): qué función se usa, idioma, versión. Nunca el contenido del texto.</li>
-<li><b>Tu propia clave</b> (Gemini u OpenRouter), si la pegas: se guarda solo en tu navegador y se envía con cada revisión para pagarla con tu cuenta. No la guardamos en el servidor.</li>
-<li><b>Pagos.</b> Los procesa Stripe. Nosotros guardamos tu correo, el plan y la clave de licencia. No vemos los datos de tu tarjeta.</li>
+<li><b>Texto que envías:</b> el texto que pegas o seleccionas y pides revisar o reescribir, y tus respuestas a las preguntas del humanizador.</li>
+<li><b>Identificador de instalación:</b> un código aleatorio creado al instalar. No contiene tu nombre ni tu correo.</li>
+<li><b>Dirección IP:</b> la recibe el servidor con cada petición.</li>
+<li><b>Datos de uso anónimos:</b> qué función usas, idioma, versión y resultado (Google Analytics). Nunca el contenido del texto.</li>
+<li><b>Si pagas:</b> correo electrónico, plan y clave de licencia. Los datos de la tarjeta los recoge Stripe; nosotros no los vemos.</li>
+<li><b>Tu propia clave de API</b> (Gemini u OpenRouter), solo si la pegas.</li>
 </ul>
-<h2>Qué no hacemos</h2>
-<ul><li>No leemos las páginas que visitas. La extensión solo recibe el texto que tú seleccionas o pegas.</li><li>No vendemos datos ni los usamos para publicidad.</li><li>No vendemos ni cedemos tus textos y no los usamos para entrenar modelos de terceros.</li></ul>
-<h2>Tus derechos</h2>
-<p>Puedes pedir acceso, corrección o borrado de tus datos (también de los textos guardados) escribiendo a <a href="mailto:u9603656505@gmail.com">u9603656505@gmail.com</a>.</p>
-<hr><h1 id="pt">Política de privacidade (PT)</h1>
-<p>O texto que você envia vai ao nosso servidor para a análise ou a reescrita. Se a opção «Ajudar a melhorar o detector com meus textos» estiver ligada (vem ligada; ela aparece antes da sua primeira verificação e dá para desligar ali ou depois em Configurações), guardamos o texto verificado, o resultado e sua resposta a «Quem escreveu este texto?» por até 180 dias, em servidores na UE, ligados a uma impressão do identificador de instalação e não ao seu nome ou e-mail, só para medir e ajustar a detecção. Com a opção desligada, o texto é descartado em seguida. Guardamos um identificador aleatório de instalação e o contador de testes grátis. Se você usar sua própria chave (Gemini ou OpenRouter), ela fica só no seu navegador e não é guardada no servidor. Pagamentos são processados pela Stripe: guardamos e-mail, plano e chave de licença. Não lemos as páginas que você visita, não vendemos dados e não usamos seus textos para treinar modelos de terceiros. Contato: <a href="mailto:u9603656505@gmail.com">u9603656505@gmail.com</a>.</p>
+<p>No recogemos el historial de navegación ni el contenido de las páginas que visitas: la extensión solo recibe el texto que tú pegas o seleccionas y envías.</p>
+
+<h2>2. Cómo los usamos</h2>
+<ul>
+<li>El texto, para analizarlo o reescribirlo y devolverte el resultado.</li>
+<li>El identificador y la IP, para aplicar los límites de uso gratis y evitar abusos.</li>
+<li>Los datos de uso, para saber qué funciones se usan y corregir errores.</li>
+<li>El correo y la licencia, para activar el plan de pago y darte soporte.</li>
+<li>Los textos guardados con la opción «Ayudar a mejorar el detector» (ver punto 3), solo para medir y ajustar la detección.</li>
+</ul>
+<p>No vendemos datos, no los usamos para publicidad ni para decidir sobre créditos, y no usamos tus textos para entrenar modelos de terceros.</p>
+
+<h2>3. Dónde y cuánto tiempo se guardan</h2>
+<ul>
+<li><b>Texto enviado:</b> con la opción «Ayudar a mejorar el detector con mis textos» apagada, se procesa y se descarta al terminar. Con la opción encendida (viene encendida; te la mostramos antes de la primera revisión y puedes apagarla ahí o en Ajustes), guardamos el texto, el resultado y tu respuesta a «¿Quién escribió este texto?» hasta 180 días en servidores de la UE (Cloudflare D1), vinculados al identificador de instalación. Se borran automáticamente a los 180 días.</li>
+<li><b>Huella del texto (hash) y resultado:</b> 7 días, para devolver el mismo resultado si revisas el mismo texto. Con la huella no se puede reconstruir el texto.</li>
+<li><b>IP:</b> 2 días. <b>Contador de usos gratis por instalación:</b> hasta 400 días.</li>
+<li><b>Correo, plan y licencia de pago:</b> mientras el plan esté activo y después, para poder restaurar la licencia; se borran si lo pides.</li>
+<li><b>En tu navegador</b> (almacenamiento local de Chrome): identificador de instalación, contador, licencia, tu clave de API, ajustes y el último texto en edición. Se borran al desinstalar la extensión.</li>
+</ul>
+<p>Todo viaja cifrado (HTTPS). El servidor funciona en Cloudflare y solo el desarrollador tiene acceso a los datos.</p>
+
+<h2>4. Con quién se comparten</h2>
+<ul>
+<li><b>Proveedor de modelos de IA:</b> el texto se envía a OpenRouter (y al modelo que enruta) para generar el análisis o la reescritura; si usas tu propia clave, a Google Gemini u OpenRouter con tu cuenta. Lo procesan solo para devolver la respuesta.</li>
+<li><b>Cloudflare:</b> aloja el servidor y la base de datos.</li>
+<li><b>Google Analytics:</b> recibe los datos de uso anónimos.</li>
+<li><b>Stripe:</b> procesa los pagos.</li>
+</ul>
+<p>No compartimos datos con nadie más, salvo que lo exija la ley.</p>
+
+<h2>5. Tus derechos y opciones</h2>
+<p>Puedes apagar el guardado de textos en Ajustes en cualquier momento. Puedes pedir acceso, corrección o borrado de tus datos, incluidos los textos guardados, escribiendo a <a href="mailto:u9603656505@gmail.com">u9603656505@gmail.com</a>. La extensión no está dirigida a menores de 13 años. Si cambiamos esta política, actualizaremos la fecha de arriba.</p>
+
+<hr>
+<h1 id="pt">Política de privacidade do TextoVivo</h1>
+<p>Atualizada em 13 de novembro de 2026. Vale para a extensão do Chrome «TextoVivo» e o seu servidor. Contato: <a href="mailto:u9603656505@gmail.com">u9603656505@gmail.com</a>.</p>
+<h2>1. Dados que coletamos</h2>
+<p>O texto que você cola ou seleciona e envia, e suas respostas às perguntas; um identificador aleatório de instalação; o endereço IP; dados de uso anônimos (Google Analytics: função, idioma, versão, nunca o texto); se você paga, e-mail, plano e chave de licença (o cartão fica com a Stripe); sua própria chave de API, se você colar. Não coletamos o histórico nem o conteúdo das páginas que você visita.</p>
+<h2>2. Como usamos</h2>
+<p>O texto, para analisar ou reescrever; identificador e IP, para os limites de uso grátis; dados de uso, para corrigir erros; e-mail e licença, para ativar o plano e dar suporte; textos guardados com a opção ligada, só para medir e ajustar a detecção. Não vendemos dados, não usamos para publicidade e não usamos seus textos para treinar modelos de terceiros.</p>
+<h2>3. Onde e por quanto tempo</h2>
+<p>Com a opção «Ajudar a melhorar o detector com meus textos» desligada, o texto é descartado ao terminar. Ligada (vem ligada, aparece antes da primeira verificação e pode ser desligada ali ou em Configurações), guardamos texto, resultado e sua resposta a «Quem escreveu este texto?» por até 180 dias em servidores na UE (Cloudflare D1), apagados automaticamente. Hash do texto e resultado: 7 dias. IP: 2 dias. Contador de testes grátis: até 400 dias. E-mail, plano e licença: enquanto houver plano e depois, para restaurar a licença; apagados a pedido. No navegador ficam identificador, contador, licença, sua chave, configurações e o último texto em edição; somem ao desinstalar. Tudo trafega com HTTPS; só o desenvolvedor acessa os dados.</p>
+<h2>4. Com quem compartilhamos</h2>
+<p>OpenRouter e o modelo de IA que ele usa (ou Google Gemini / OpenRouter com a sua chave), só para gerar a resposta; Cloudflare (servidor e banco de dados); Google Analytics (uso anônimo); Stripe (pagamentos). Com mais ninguém, salvo exigência legal.</p>
+<h2>5. Seus direitos</h2>
+<p>Desligue o envio de textos em Configurações quando quiser. Peça acesso, correção ou exclusão dos seus dados por <a href="mailto:u9603656505@gmail.com">u9603656505@gmail.com</a>. Não é destinada a menores de 13 anos. Mudanças nesta política atualizam a data acima.</p>
+
+<hr>
+<h1 id="en">TextoVivo Privacy Policy</h1>
+<p>Last updated: November 13, 2026. Covers the «TextoVivo» Chrome extension and its server. Contact: <a href="mailto:u9603656505@gmail.com">u9603656505@gmail.com</a>.</p>
+<h2>1. Data we collect</h2>
+<p>Text you paste or select and submit, and your answers to the humanizer questions; a random install ID; your IP address; anonymous usage data (Google Analytics: feature, language, version, never the text); if you pay, email, plan and license key (card details are collected by Stripe, we never see them); your own API key, only if you paste one. We do not collect browsing history or the content of pages you visit.</p>
+<h2>2. How we use it</h2>
+<p>Text: to analyze or rewrite it and return the result. Install ID and IP: to enforce free-use limits and prevent abuse. Usage data: to see which features are used and fix bugs. Email and license: to activate the paid plan and provide support. Texts saved with the option on: only to measure and tune detection. We do not sell data, use it for advertising or creditworthiness, or use your texts to train third-party models.</p>
+<h2>3. Storage and retention</h2>
+<p>With «Help improve the detector with my texts» off, the text is discarded once processed. With it on (on by default, shown before your first check, can be turned off there or in Settings), we keep the text, result and your answer to «Who wrote this text?» for up to 180 days on EU servers (Cloudflare D1), deleted automatically. Text hash and result: 7 days. IP: 2 days. Free-use counter: up to 400 days. Email, plan and license: while the plan is active and afterwards to restore the license; deleted on request. In your browser (Chrome local storage): install ID, counter, license, your API key, settings and the last draft; removed when you uninstall. All traffic uses HTTPS; only the developer can access the data.</p>
+<h2>4. Sharing</h2>
+<p>OpenRouter and the AI model it routes to (or Google Gemini / OpenRouter under your own key), only to produce the response; Cloudflare (server and database); Google Analytics (anonymous usage); Stripe (payments). No one else, unless required by law.</p>
+<h2>5. Your rights and choices</h2>
+<p>Turn off text sharing in Settings any time. Request access, correction or deletion of your data at <a href="mailto:u9603656505@gmail.com">u9603656505@gmail.com</a>. Not directed at children under 13. Changes to this policy update the date above.</p>
 </body></html>
